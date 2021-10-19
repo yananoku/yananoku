@@ -4,7 +4,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>A-Game | Home</title>
+  <title>A-Game | Contact</title>
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -36,48 +36,51 @@
   <main>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/home/hero.jpg')">
+    <section class="hero hero-sm" style="background-image: url('images/contact/hero.jpg')">
       <div class="container">
-        <h1>Игры</h1>
-        <p class="lead">Немного о популярных играх.</p>
+        <h1 class="mb-0">Contact Us</h1>
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Form and text -->
     <section class="section-padding">
       <div class="container">
-        <div class="services">
-
-          <div class="service-col">
-            <div class="service">
-              <img src="images/icons/dota.png" alt="Dota 2">
-              <h4>Dota 2</h4>
-              <p>Глубочайшая многопользовательская стратегия всех времён, в которой всегда найдётся место новой стратегии или тактике.</p>
-              <a href="#">Learn More</a>
-            </div>
+        <div class="contact-form">
+          <div class="contact-form__form">
+            <form action="#" class="form-layout">
+              <div class="form-col-50">
+                <label for="contact-name">Your Name</label>
+                <input type="text" class="form-control" name="contact-name" id="contact-name">
+              </div>
+              <div class="form-col-50">
+                <label for="contact-email">Your Email</label>
+                <input type="email" class="form-control" name="contact-email" id="contact-email">
+              </div>
+              <div class="form-col">
+                <label for="contact-message">Your Message</label>
+                <textarea class="form-control"
+                          name="contact-message"
+                          id="contact-message"
+                          rows="4"></textarea>
+              </div>
+              <div class="form-col">
+                <button class="btn btn-primary" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-
-          <div class="service-col">
-            <div class="service">
-              <img src="images/icons/csgo.png" alt="Counter-Strike: Global Offensive">
-              <h4>Counter-Strike: Global Offensive</h4>
-              <p>Захватывающий многопользовательский шутер от первого лица, в котором игроки распределяются по двум командам и сражаются друг против друга.</p>
-              <a href="#">Learn More</a>
-            </div>
+          <div class="contact-form__info">
+            <p class="lead">Email: <a href="mailto:a-game@gmail.com">a-game@gmail.com</a></p>
+            <p class="lead">Phone: <a href="tel:+7 999 235 2322">+7 999 235 2322</a></p>
+            <br>
+            <p class="lead">Позвоните нам в любое время, мы стараемся ответить на все запросы в течение 24 часов в рабочие дни.</p>
           </div>
-
-          <div class="service-col">
-            <div class="service">
-              <img src="images/icons/genshin.png" alt="Genshin Impact">
-              <h4>Genshin Impact</h4>
-              <p>Вас ждёт захватывающее однопользовательское приключение, где вы станете гостем из другого мира в поисках потерянного родного человека.</p>
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
